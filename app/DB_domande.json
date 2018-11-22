@@ -1,0 +1,305 @@
+{
+    "11": {
+        "CHIAVE": "11", 
+        "NAME": "X11_pranzo", 
+        "INDICAZIONI": "Indicare se sì o no", 
+        "MOD_RISPOSTA": [
+            "sì", 
+            "no"
+        ], 
+        "ORARIO": [
+            "14 POMERIGGIO"
+        ], 
+        "DOMANDA": "Ha pranzato?", 
+        "TYPE": "lista"
+    }, 
+    "10": {
+        "CHIAVE": "10", 
+        "NAME": "X10_mezzi", 
+        "INDICAZIONI": "Indichi i mezzi di trasporto usati separati da un ; nel caso in cui non si sia spostato, scrivere NON MI SONO SPOSTATO", 
+        "ORARIO": [
+            "10 MEZZOGIORNO", 
+            "14 POMERIGGIO"
+        ], 
+        "DOMANDA": "Se si è spostato, che mezzi ha usato?", 
+        "TYPE": "testo", 
+        "CODICE": "Mezzi"
+    }, 
+    "13": {
+        "CHIAVE": "13", 
+        "NAME": "X13_piac_compl", 
+        "INDICAZIONI": "Indichi quanto è stata piacevole da 0=per niente a 10=del tutto", 
+        "ORARIO": [
+            "22 SERA"
+        ], 
+        "DOMANDA": "Quanto è stata piacevole questa giornata nel complesso?", 
+        "TYPE": "slider", 
+        "CODICE": "Quanto è stata piacevole questa giornata nel complesso?"
+    }, 
+    "12": {
+        "CHIAVE": "12", 
+        "NAME": "X12_cena", 
+        "INDICAZIONI": "Indicare se sì o no", 
+        "MOD_RISPOSTA": [
+            "sì", 
+            "no"
+        ], 
+        "ORARIO": [
+            "22 SERA"
+        ], 
+        "DOMANDA": "Ha cenato?", 
+        "TYPE": "lista"
+    }, 
+    "15": {
+        "CHIAVE": "15", 
+        "NAME": "X15_bilancio", 
+        "INDICAZIONI": "Valutare da 0=per niente piacevole a 10=molto piacevole", 
+        "ORARIO": [
+            "22 SERA"
+        ], 
+        "DOMANDA": "Queste sono le attività che ha svolto oggi. Può valutarle?", 
+        "TYPE": "fasullo", 
+        "CODICE": "Queste sono le attività che ha svolto oggi. Può valutarle?"
+    }, 
+    "14": {
+        "CHIAVE": "14", 
+        "NAME": "X14_fat_compl", 
+        "INDICAZIONI": "Indichi quanto è stato faticosa da 0=per niente a 10=del tutto", 
+        "ORARIO": [
+            "22 SERA"
+        ], 
+        "DOMANDA": "Quanto è stato faticosa questa giornata nel complesso?", 
+        "TYPE": "slider", 
+        "CODICE": "Quanto è stato faticosa questa giornata nel complesso?"
+    }, 
+    "16": {
+        "CHIAVE": "16", 
+        "NAME": "X16_aiuto", 
+        "INDICAZIONI": "Ci indichi di cosa o di chi avrebbe avuto bisogno per migliorare questa giornata", 
+        "ORARIO": [
+            "22 SERA"
+        ], 
+        "DOMANDA": "Cosa avrebbe potuto migliorare la qualità di questa giornata?", 
+        "TYPE": "testo", 
+        "CODICE": "Aiuto"
+    }, 
+    "1": {
+        "CHIAVE": "1", 
+        "NAME": "X1_cosafatto", 
+        "INDICAZIONI": "Ci indichi l'attività che più ha influenzato il suo umore", 
+        "ORARIO": [
+            "MATTINA_PRESTO", 
+            "MEZZOGIORNO", 
+            "POMERIGGIO", 
+            "SERA"
+        ], 
+        "DOMANDA": "Che cosa ha fatto dall'ultima volta che ha risposto al questionario", 
+        "TYPE": "testo", 
+        "CODICE": "Che_cosa_ha_fatto"
+    }, 
+    "3": {
+        "CHIAVE": "3", 
+        "NAME": "X3_intervallo_piacevole", 
+        "INDICAZIONI": "da -3: per niente piacevole, a +3 molto piacevole", 
+        "MOD_RISPOSTA": [
+            "-3", 
+            "-2", 
+            "-1", 
+            "0", 
+            "+1", 
+            "+2", 
+            "+3"
+        ], 
+        "ORARIO": [
+            "MATTINA_PRESTO", 
+            "MEZZOGIORNO", 
+            "POMERIGGIO", 
+            "SERA"
+        ], 
+        "DOMANDA": "Quanto è stato piacevole questo intervallo di tempo?", 
+        "TYPE": "lista"
+    }, 
+    "2": {
+        "INDICAZIONI": "", 
+        "NAME": "X2_conChi", 
+        "CHIAVE": "2", 
+        "MOD_RISPOSTA": [
+            "Da solo", 
+            "Madre", 
+            "Padre", 
+            "Coniuge/Partner", 
+            "Figlio con patologia psichiatrica", 
+            "Altro Figlio/a", 
+            "Fratello/sorella", 
+            "Altri familiari conviventi", 
+            "Con altre persone che conosce"
+        ], 
+        "ORARIO": [
+            "MATTINA_PRESTO", 
+            "MEZZOGIORNO", 
+            "POMERIGGIO", 
+            "SERA"
+        ], 
+        "DOMANDA": "E' stato da solo o con persone che conosce?", 
+        "TYPE": "multipla"
+    }, 
+    "5": {
+        "CHIAVE": "5", 
+        "NAME": "X5_slider2", 
+        "INDICAZIONI": "Indichi quanto è stato faticoso da 0=per niente a 10=del tutto", 
+        "DOMANDA": "Quanto è stato faticoso questo intervallo di tempo?", 
+        "TYPE": "slider", 
+        "CODICE": "Quanto è stato faticoso questo intervallo di tempo?"
+    }, 
+    "4": {
+        "CHIAVE": "4", 
+        "NAME": "X4_slider1", 
+        "INDICAZIONI": "Indichi quanto è stato piacevole da 0=per niente a 10=del tutto", 
+        "DOMANDA": "Quanto è stato piacevole questo intervallo di tempo?", 
+        "TYPE": "slider", 
+        "CODICE": "Quanto è stato piacevole questo intervallo di tempo?"
+    }, 
+    "7": {
+        "CHIAVE": "7", 
+        "NAME": "X7_dormito", 
+        "INDICAZIONI": "Indicare se sì o no", 
+        "MOD_RISPOSTA": [
+            "sì", 
+            "no"
+        ], 
+        "ORARIO": [
+            "00 MATTINA_PRESTO"
+        ], 
+        "DOMANDA": "Ha dormito?", 
+        "TYPE": "lista"
+    }, 
+    "6": {
+        "CHIAVE": "6", 
+        "NAME": "X6_aiuto", 
+        "INDICAZIONI": "Ci indichi di cosa o di chi avrebbe avuto bisogno per migliorare questo intervallo di tempo", 
+        "ORARIO": [
+            "MATTINA_PRESTO", 
+            "MEZZOGIORNO", 
+            "POMERIGGIO", 
+            "SERA"
+        ], 
+        "DOMANDA": "Cosa avrebbe potuto migliorare la qualità di questo intervallo di tempo?", 
+        "TYPE": "testo", 
+        "CODICE": "Aiuto"
+    }, 
+    "9": {
+        "CHIAVE": "9", 
+        "NAME": "X9_con_chi_aperta", 
+        "INDICAZIONI": "Ci indichi il nome delle persone con cui ha trascorso questo intervallo di tempo separati da un ;", 
+        "ORARIO": [
+            "00 MATTINA_PRESTO10 MEZZOGIORNO", 
+            "14 POMERIGGIO", 
+            "22 SERA"
+        ], 
+        "DOMANDA": "Con chi era?", 
+        "TYPE": "testo", 
+        "CODICE": "Con_chi_aperta"
+    }, 
+    "8": {
+        "CHIAVE": "8", 
+        "NAME": "X8_colazione", 
+        "INDICAZIONI": "Indicare se sì o no", 
+        "MOD_RISPOSTA": [
+            "sì", 
+            "no"
+        ], 
+        "ORARIO": [
+            "00 MATTINA_PRESTO"
+        ], 
+        "DOMANDA": "Ha fatto colazione?", 
+        "TYPE": "lista"
+    }, 
+    "101": {
+        "CHIAVE": "101", 
+        "NAME": "Amico_1", 
+        "INDICAZIONI": "indicare amico o familiare 1",  
+        "DOMANDA": "indicare amico 1", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_1"
+    },
+    "102": {
+        "CHIAVE": "102", 
+        "NAME": "Amico_2", 
+        "INDICAZIONI": "indicare amico 2",  
+        "DOMANDA": "indicare amico 2", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_2"
+    },
+    "103": {
+        "CHIAVE": "103", 
+        "NAME": "Amico_3", 
+        "INDICAZIONI": "indicare amico 3",  
+        "DOMANDA": "indicare amico 3", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_3"
+    },
+    "104": {
+        "CHIAVE": "104", 
+        "NAME": "Amico_4", 
+        "INDICAZIONI": "indicare amico 4",  
+        "DOMANDA": "indicare amico 4", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_4"
+    },
+    "105": {
+        "CHIAVE": "105", 
+        "NAME": "Amico_5", 
+        "INDICAZIONI": "indicare amico 5",  
+        "DOMANDA": "indicare amico 5", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_5"
+    }, 
+    "106": {
+        "CHIAVE": "106", 
+        "NAME": "Amico_6", 
+        "INDICAZIONI": "indicare amico 6",  
+        "DOMANDA": "indicare amico 6", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_6"
+    },
+    "106": {
+        "CHIAVE": "106", 
+        "NAME": "Amico_6", 
+        "INDICAZIONI": "indicare amico 6",  
+        "DOMANDA": "indicare amico 6", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_6"
+    },
+    "107": {
+        "CHIAVE": "107", 
+        "NAME": "Amico_3", 
+        "INDICAZIONI": "indicare amico 7",  
+        "DOMANDA": "indicare amico 7", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_7"
+    },
+    "108": {
+        "CHIAVE": "108", 
+        "NAME": "Amico_8", 
+        "INDICAZIONI": "indicare amico ",  
+        "DOMANDA": "indicare amico 8", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_8"
+    },
+    "109": {
+        "CHIAVE": "109", 
+        "NAME": "Amico_9", 
+        "INDICAZIONI": "indicare amico 9",  
+        "DOMANDA": "indicare amico 9", 
+        "TYPE": "testo", 
+        "CODICE": "Amico9"
+    },
+    "110": {
+        "CHIAVE": "110", 
+        "NAME": "Amico_10", 
+        "INDICAZIONI": "indicare amico 10",  
+        "DOMANDA": "indicare amico 10", 
+        "TYPE": "testo", 
+        "CODICE": "Amico_10"
+    }
+}

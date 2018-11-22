@@ -1,0 +1,146 @@
+<title>Survey</title>
+
+	<style>
+
+</style>
+  </head>
+{% extends "base.html" %}
+
+        {% block page_content %}
+
+<!-- riattivare in caso di testing
+
+<p>questionario "{{dati}}" </p>
+<p>risponde: "{{cellulare}}"</p>
+<p>orario di riferimento: "{{orario}}" </p>
+<p>orario di riferimento: "{{ex_ante}}" </p>
+
+
+-->
+
+<p>posizione </p> <p id="location"> </p>
+        <form action="{{ url_for('risultato') }}" method="POST" id="main">
+            <div>
+
+               <p align="justify">
+                   <br/><br/>
+            <input type='hidden' name='cellulare' value="{{cellulare}}"/>
+            <input type='hidden' name='orario' value="{{orario}}"/>
+            <input type='hidden' name='gps' value=""/>
+
+            <h3> familiari e amici con cui hai passato del tempo nel periodo di riferimento <h3>
+             {% for persone in ex_ante %}
+                   
+                   {% if persone[0] == "A" %}
+                   
+                   <label class="control checkbox">
+                   <input id="{{ex_ante[persone]}}" name="{{ex_ante[persone]}}" type="checkbox">
+                   <span class="control-indicator"></span>
+                       <p>{{ex_ante[persone]}} </p>
+                   </label>
+                   <br>
+                   {% endif %}    
+                       
+                       
+             {% endfor %}
+              <h3> in questo periodo di tempo hai incontrato altre persone che consideri importanti nella tua vita </h3>  
+              <div class="form-group">
+                            <label for="exampleTextarea">indica quali suddivisi da una virgola</label>
+
+
+                            <textarea form="main" class="form-control" id="altri amici" name="altri amici" rows="3"></textarea>
+                        </div>   
+                
+                
+                   
+            {% for domande in dati %}
+                <h3> {{domande['DOMANDA']}} </h3>
+
+
+                {% if domande["TYPE"] == "lista" %}
+                    <div class = "select">
+                    <select name = "{{domande['DOMANDA']}}" aria-label="{{domande['DOMANDA']}}">
+                            <option selected value = "None"> Rispondi alla domanda </option>
+                            {% for domanda in domande['MOD_RISPOSTA'] %}
+                                <option name = "{{domanda}}" value = "{{domanda}}" >{{domanda}}</option>
+                            {% endfor %}
+                    </select>
+                    </div>
+
+                {% elif domande["TYPE"] == "multipla" %}
+                    {% for domanda in domande['MOD_RISPOSTA'] %}
+                                    <label class="control checkbox">
+                                    <input id={{domanda}} name="{{domanda}}" type="checkbox">
+                                    <span class="control-indicator"></span>
+                                    {{domanda}}
+                                    </label>
+                    {% endfor %}
+
+                {% elif domande["TYPE"] == "testo" %}
+                        <div class="form-group">
+                            <label for="exampleTextarea">{{domande['INDICAZIONI']}}</label>
+
+
+                            <textarea form="main" class="form-control" id="{{domande['CODICE']}}" name="{{domande['CODICE']}}" rows="3" required></textarea>
+                        </div>
+                
+                {% elif domande["TYPE"] == "slider" %}
+                        <div class="slidecontainer">>
+                                 <label>{{domande['DOMANDA']}}</label>
+                                  <input type="range" required min="0" max="10" value="5" class="slider" name="name={{domande['NAME']}}"  id="{{domande['CHIAVE']}}" "name={{domande['CODICE']}}", oninput="outputUpdate{{domande['CHIAVE']}}(value)">
+                        </div>
+                        <output for="fader" id="VOLUME{{domande['CHIAVE']}}">5</output>
+                        <script>
+                            function outputUpdate{{domande['CHIAVE']}}(vol) {
+                            document.querySelector("#VOLUME{{domande['CHIAVE']}}").value = vol;
+                        }
+                        </script>
+                
+                
+                
+
+                {% else %}
+                <p> domanda non ben formattata </p>
+                    <p>{{domande['DOMANDA']}}</p>
+                {% endif %}
+
+
+            {% endfor %}
+            <div class = "col-md-12">
+                </br>
+                    <button type="submit" class="btn btn-default btn-primary"> invia le risposte </button>
+                </br>
+                </br>
+                </div>
+<p> conferma nuova versione </p>
+            </form>
+
+
+<script>
+    function getLocation()
+{
+    // Check whether browser supports Geolocation API or not
+    if (navigator.geolocation) { // Supported
+        navigator.geolocation.getCurrentPosition(getPosition);
+    } else { // Not supported
+        alert("Oop! This browser does not support HTML5 Geolocation.");
+    }
+}
+function getPosition(position)
+{
+    document.getElementById("location").innerHTML = 
+        "Latitude: " + position.coords.latitude + "<br>" +
+        "Longitude: " + position.coords.longitude;
+document.getElementsByName("gps")[0].value = position.coords.latitude + "," + position.coords.longitude;
+}    
+    
+getLocation()
+</script>
+    
+    
+
+
+        {% endblock %}
+
+
+
