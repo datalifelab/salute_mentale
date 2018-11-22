@@ -1,5 +1,3 @@
-# Salute mentale: Stile di vita dei familiari dei pazienti psichiatrici.  Verso una stima dei costi indiretti e intangibili.
-
 ## Sintesi del progetto
 
 Il progetto ha previsto la creazione di una nuova metodologia e un nuovo strumento tecnologico per l’analisi dei costi
