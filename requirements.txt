@@ -1,7 +1,7 @@
 click==6.7
 dominate==2.3.1
 et-xmlfile==1.0.1
-Flask==0.12.2
+Flask
 Flask-Bootstrap==3.3.7.1
 itsdangerous==0.24
 jdcal==1.3
