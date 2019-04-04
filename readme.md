@@ -28,6 +28,9 @@ e-mail scarselli@retesviluppo.it
 ## Le pubblicazioni scientifiche
 ** in corso di redazione **
 
+## Presentazioni pubbliche
+05 - 04 - 2019 [I giovani in tempo reale](https://docs.google.com/presentation/d/11lH5LkR6DW-opGHWiziHRWHlQiCV-rDpOAoPks2WsC4/edit#slide=id.g557c2e2264_6_0) - Universtità di Firenze / DataLifeLab  
+
 
 ## I partner
 
