@@ -23,7 +23,7 @@ metodologia secondo il principio dell’open source.
 per partecipare o per maggiori informazioni invia una e-mail salutementale@datalifelab.eu
 
 ## Per informazioni sul software e partecipare allo sviluppo dell'applicativo open source
-e-mail scarselli@retesviluppo.it
+e-mail scarselli@gmail.com
 
 ## Le pubblicazioni scientifiche
 ** in corso di redazione **
